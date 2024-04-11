@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg">
+     <div class="container text-center py-3">
+      <a class="d-flex justify-content-center" href="/"><button type="button" class="btn-home">
+        <img src="./assets/icons/icon-prev.svg" alt="icon next" /> Back to home 
+      </button></a>
+      <div class="d-none">
+        State: <i class="page-state">read</i>, orientation:
+        <i class="page-orientation">landscape</i>
+      </div>
+    </div> 
+    <div class="container" style="padding: 30px 20px">
+      <div class="flip-book" id="demoBookExample">
+        <div class="page page-cover page-cover-top" data-density="hard">
+          <div class="page-content">
+            <h2 class="book-title" style="padding-top: 0;">Pet Care Companion</h2>
+            <p class="text-center ff-luicida-bold book-title-sub">A Guide to Happy & Healthy Fur, Fins, and Feathers</p>
+          </div>
+          <img class="cover-img-top" src="./assets/images/book-images/cover-mask-1.png" alt="">
+          <img class="cover-img-bottom" src="./assets/images/book-images/cover-mask-2.png" alt="">
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-4"
+              style="background-image: url(./assets/images/book-images/exercise.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 1</span>
+            <h2 class="page-header">Enough Exercise for the pet.</h2>
+            <div class="page-text">
+              <p>
+                Making sure your pet is happy and healthy means giving them
+                plenty of playtime and friends. Think of it like this: just like
+                you enjoy running around and hanging out with your friends, your
+                pets love to do that too! You can play with them using their
+                favorite toys, or sometimes, if you're not around, someone else
+                like a pet-sitter can come and play with them so they're not
+                lonely. Remember, every pet is little bit different. Dogs
+                usually want lots of cuddles and playdates, more than cats do.
+                But even though cats seem okay by themselves, they also like to
+                play and think about fun puzzles from time to time. And just
+                like people, every pet is special in their own way; some might
+                want extra hugs or playtime.
+              </p>
+            </div>
+            <div class="page-footer">2</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-1"
+              style="background-image: url(./assets/images/book-images/clean-home.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 2</span>
+            <h2 class="page-header">Clean home</h2>
+            <div class="page-text">
+              <p>
+                Just like you feel cozy and happy in a clean room, your pets
+                love a tidy and safe place too! As they get older, they need
+                extra love and care, so keeping their space neat and secure is
+                super important. Imagine making your home a super-safe
+                playground for them, where there's nothing around that can hurt
+                them—like cleaning stuff, medicines, or wires they might trip
+                over or chew on. It's like baby-proofing, but for your furry
+                friends, to make sure they can play and nap without any problem.
+              </p>
+            </div>
+            <div class="page-footer">4</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-3"
+              style="background-image: url(./assets/images/book-images/healthy.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 3</span>
+            <h2 class="page-header">keep the pets healthy</h2>
+            <div class="page-text">
+              <p>
+                Just like you need yummy and healthy meals to grow strong, your
+                pets need the right kind of food too! There are so many pet
+                foods to choose from, and sometimes the cheaper ones might not
+                be the best for them. It's like when we pick snacks; the
+                tastiest ones aren't always the healthiest. So, when you're
+                picking out food for your furry friend, try to find something
+                that says "complete" on it because that means it has everything
+                they need to be happy and healthy.
+              </p>
+              <p>
+                Even though it might seem like a good idea to let your pet eat a
+                lot, it's really important they don't get too chubby. Pets, like
+                dogs and cats, don't need to eat as much as you'd think! Feeding
+                them the right amount of good food will keep them just the right
+                weight. Your vet can tell you exactly what kind of food is best
+                for your pet, especially if they're getting older, to make sure
+                they stay fit and don't get sick.
+              </p>
+              <p>
+                And don't forget, pets need to drink lots of water every day,
+                just like you do, so make sure they always have a fresh bowl of
+                water to sip from.
+              </p>
+            </div>
+            <div class="page-footer">6</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-2"
+              style="background-image: url(./assets/images/book-images/daily-checkup.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 4</span>
+            <h2 class="page-header">Regular pet check ups</h2>
+            <div class="page-text">
+              <p>
+                Sometimes, we might forget to take our pets to the vet because
+                they seem okay, but visiting the vet regularly is super
+                important to keep them healthy. Just like a tiny splinter in
+                your finger can turn into a big ouchie if not taken care of,
+                small problems with your pets can get worse if not checked by a
+                vet.
+              </p>
+              <p>
+                Even when we're super busy, we need to make sure our pets get
+                their checkups. At these checkups, the vet looks over your pet
+                very carefully, might need to take some blood for tests, or even
+                take pictures inside their body to make sure everything is
+                working just right.
+              </p>
+              <p>
+                The vet will also give you advice on how to keep your pet
+                feeling great and might give you some medicine if your pet needs
+                it. They might even tell you about other pet doctors who can
+                help with special problems.
+              </p>
+              <p>
+                And don't forget about your pet's teeth – they need cleaning
+                too! The vet will check their teeth to make sure they're
+                healthy, and you can give your pet special treats that help
+                clean their teeth or even a special mouthwash for pets.
+              </p>
+            </div>
+            <div class="page-footer">8</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-5"
+              style="background-image: url(./assets/images/book-images/trackers.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 5</span>
+            <h2 class="page-header">make sure you have a microchip tracker</h2>
+            <div class="page-text">
+              <p>
+                Putting a microchip in your pet is a quick and not-too-expensive
+                way to make sure they're safe. Think of a microchip as a tiny
+                helper that lives under your pet's skin, about where their
+                shoulder blades are. It's really, really small—no bigger than a
+                grain of rice!
+              </p>
+              <p>
+                If your pet ever goes missing or someone takes them, this
+                microchip is super important. A vet or animal shelter can use a
+                special tool to read the microchip, and it tells them your pet's
+                secret code. That code is like your pet's name tag, but it can't
+                get lost because it's inside them. So, if your pet ever gets
+                lost, this tiny helper can help bring them back to you.
+              </p>
+            </div>
+            <div class="page-footer">10</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-1"
+              style="background-image: url(./assets/images/book-images/vaccinated.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 6</span>
+
+            <h2 class="page-header">vaccinated pet</h2>
+            <div class="page-text">
+              <p>
+                Just like you get shots to keep you healthy, your pets need
+                their shots too! Whether they're dogs, cats, bunnies, or even
+                horses, getting them their vaccinations is super important to
+                help them stay healthy. Even pets who stay inside all the time
+                need to be vaccinated.
+              </p>
+              <p>
+                Think of vaccinations like a shield that keeps your pets safe
+                from some icky germs. It's always a good idea to check with your
+                vet to see which shots your pet needs to keep that shield strong
+                and shiny. Even if you think your pet is all caught up on their
+                shots, your vet might know about some new ones they need. So,
+                always ask your vet and follow their advice to make sure your
+                pet is as protected as they can be!
+              </p>
+            </div>
+            <div class="page-footer">12</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-4"
+              style="background-image: url(./assets/images/book-images/spayed.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 7</span>
+
+            <h2 class="page-header">Neutered pets</h2>
+            <div class="page-text">
+              <p>
+                Getting your pets spayed or neutered, which means they can't
+                have puppies or kittens, is a really helpful thing to do. It
+                means fewer pets without homes and less crowding in animal
+                shelters. Plus, it can make your pets calmer and less likely to
+                wander far from home looking for adventures. Sometimes, pets who
+                aren't fixed can get a bit too rowdy or loud. Vets often say
+                it's a good idea to have this done when your pet is young,
+                around 1 to a little over a year old, so they grow up happy,
+                healthy, and relaxed.
+              </p>
+            </div>
+            <div class="page-footer">14</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-3"
+              style="background-image: url(./assets/images/book-images/brushing.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 8</span>
+
+            <h2 class="page-header">Grooming</h2>
+            <div class="page-text">
+              <p>
+                Even though pets like cats and dogs often clean themselves, it's
+                a good idea for you to brush their fur sometimes. This not only
+                keeps their fur neat and tidy, reducing the fluff they leave
+                around and the hairballs they might cough up, but also lets you
+                check for any tiny bugs like fleas or spots where their skin
+                might be hurt. Some pets with lots of fur might need to visit a
+                special pet hairdresser (groomer) to make sure their coats stay
+                in tip-top shape. And remember, it's important to keep their
+                nails short too, so they're comfortable and don't scratch too
+                hard when playing.
+              </p>
+            </div>
+            <div class="page-footer">16</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-2"
+              style="background-image: url(./assets/images/book-images/removing-fleas.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 9</span>
+
+            <h2 class="page-header">Fleas and ticks</h2>
+            <div class="page-text">
+              <p>
+                Fleas and ticks are tiny bugs that can make pets feel really
+                itchy and uncomfortable, and they're a common reason pets visit
+                the vet. If pets don't get treated for fleas, they might even
+                start losing their fur from scratching too much! To keep your
+                furry friends happy and itch-free, it's a good idea to check
+                them for fleas and ticks every month. Don't forget to look
+                around places like your attic or garage too, since those sneaky
+                bugs can hide there. If you find fleas or ticks, your vet can
+                help by giving special medicine for your pet or your house to
+                keep them away. Plus, there are some treatments you can use
+                regularly to stop fleas and ticks from bothering your pet in the
+                first place.
+              </p>
+            </div>
+            <div class="page-footer">18</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-1"
+              style="background-image: url(./assets/images/book-images/caring-in-cars.webp)"
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <span class="tip-header">Tip 10</span>
+
+            <h2 class="page-header">Take care of them in the car</h2>
+            <div class="page-text">
+              <p>
+                Just like you buckle up with a seatbelt in a car, pets need to
+                be safely secured too. Dogs shouldn't roam free in the car,
+                especially not in the front seat or with their heads out the
+                window. If the car has to stop quickly or if there's an
+                accident, they could get really hurt. Smaller pets, like
+                hamsters or kittens, should travel in a special pet carrier
+                that's strapped in with a seatbelt. For dogs, there are special
+                harnesses that connect to the car's seatbelts or small cages
+                that can safely go in the trunk area. This keeps everyone safe
+                on the road, including our furry friends.
+              </p>
+            </div>
+            <div class="page-footer">20</div>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-3"
+              style="
+                background-image: url(./assets/images/book-images/take-care-dog-1.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2 class="page-header">How to take care of a dog</h2>
+            <div class="page-text">
+              <p>
+                Taking care of a pet dog is a big but rewarding job because dogs
+                are known for being super friendly, loyal, and smart. They're
+                one of the favorite pets in many places, including the UK!
+              </p>
+              <p>Here’s what dogs need to be happy and healthy:</p>
+              <p>
+                1. A Comfy Bed : Just like you, dogs need a cozy spot to sleep.
+                While some might snuggle in bed with you, getting them their own
+                soft bed in a favorite spot works great too.
+              </p>
+              <p>
+                2. Exercise: Dogs need to move around a lot. Depending on what
+                type of dog you have, a good walk every day is important.
+                Smaller dogs might need shorter walks, but bigger dogs love long
+                walks and even an extra one if possible.
+              </p>
+            </div>
+            <div class="page-footer">22</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-5"
+              style="
+                background-image: url(./assets/images/book-images/take-care-dog-2.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <!-- <h2 class="page-header">How to take care of a dog</h2> -->
+            <div class="page-text">
+              <p>
+                3. Leash and Poop Bags: When you take your dog for a walk, a
+                leash helps you keep them close and safe. And don’t forget to
+                clean up after them with poop bags!
+              </p>
+              <p>Here’s what dogs need to be happy and healthy:</p>
+              <p>
+                4. Collar and Dog Tag: In many places, it’s required by law for
+                dogs to wear a collar with a tag that has your name and address
+                on it, so if they wander off, they can be returned safely.
+              </p>
+            </div>
+            <div class="page-footer">24</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-2"
+              style="
+                background-image: url(./assets/images/book-images/take-care-dog-1.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <!-- <h2 class="page-header">How to take care of a dog</h2> -->
+            <div class="page-text">
+              <p>
+                5. Attention and Play: Dogs really love spending time with their
+                owners. Playing with them several times a day, with different
+                toys and games, keeps them happy and loved.
+              </p>
+              <p>Here’s what dogs need to be happy and healthy:</p>
+              <p>
+                6. Training: Teaching your dog some basic commands is really
+                helpful. They don’t need to learn fancy tricks like dancing, but
+                knowing how to sit, stay, lie down, come when called, and maybe
+                even give a high five is great! It’s not just fun; it also helps
+                them understand what you expect from them and strengthens your
+                bond. Once they get the hang of the simple stuff, you can always
+                try teaching them more cool tricks.
+              </p>
+              <p>
+                Remember, every dog is unique, so how much exercise or play they
+                need can depend on their breed, size, and age. But no matter
+                what, giving them love and care is what counts the most!
+              </p>
+            </div>
+            <div class="page-footer">26</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-1"
+              style="
+                background-image: url(./assets/images/book-images/cat-scratching.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2 class="page-header">How to take care of a cat</h2>
+            <div class="page-text">
+              <p>
+                Cats are cool pets known for loving independence and cozy lap
+                cuddles. They enjoy sunbathing, playing, and can be quite the
+                little hunters. To keep them entertained and safe from hunting
+                wildlife, it's a good idea to give them lots of play and
+                puzzles.
+              </p>
+              <p>Before getting a cat, here are some things to know:</p>
+              <p>
+                1. Litter Boxes: Cats need a clean spot to go to the bathroom,
+                so one litter box per cat is a must. Clean it daily to keep your
+                home fresh.
+              </p>
+              <p>
+                2. Outside the Box: If your cat goes to the bathroom outside
+                their box, they might not be feeling well, so a vet visit is a
+                good idea.
+              </p>
+              <p>
+                3. Scratching Posts: To save your furniture, get some scratching
+                posts. They help cats keep their claws sharp and healthy.
+              </p>
+            </div>
+            <div class="page-footer">28</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-4"
+              style="
+                background-image: url(./assets/images/book-images/cats-space.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <!-- <h2 class="page-header">How to take care of a cat  </h2> -->
+            <div class="page-text">
+              <p>
+                4. Behavior: Cats sometimes act oddly, like hiding a lot or
+                being grumpy. If they do, they might need to see a vet to make
+                sure they're okay.
+              </p>
+              <p>
+                5. Safe Spaces: Cats like hiding spots and high places to feel
+                safe. You can make them happy by putting a cozy blanket in a
+                safe, high spot.
+              </p>
+              <p>
+                6. Feeding: Cats prefer eating small meals throughout the day.
+                If you're feeding them bigger meals, try to space them out.
+              </p>
+            </div>
+            <div class="page-footer">30</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-5"
+              style="
+                background-image: url(./assets/images/book-images/cats-grass.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <!-- <h2 class="page-header">How to take care of a cat  </h2> -->
+            <div class="page-text">
+              <p>
+                7. Cat Grass: Cats sometimes eat grass for their tummy. You can
+                get cat grass to grow indoors if you don't have a garden.
+              </p>
+              <p>
+                8. Going Outside: Not all cats go outside, but if yours does,
+                make sure they're safe. A cat flap can help them come and go as
+                they please. Some people have special cat patios (catios) or
+                take their cats for walks on a leash to keep them safe from cars
+                and other dangers.
+              </p>
+              <p>
+                Keeping a cat happy means lots of love, a bit of play, and
+                making sure they have everything they need.
+              </p>
+            </div>
+            <div class="page-footer">32</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-1"
+              style="
+                background-image: url(./assets/images/book-images/rats-house.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2 class="page-header">How to take care of a pet rat</h2>
+            <div class="page-text">
+              <p>
+                Pet rats can be awesome buddies! They're super tidy and really
+                enjoy hanging out with people. Rats usually live for about two
+                and a half years and are perfect for older kids and families
+                because they love to snuggle.
+              </p>
+              <p>Here’s how to make sure they’re happy and healthy:</p>
+              <p>
+                1. Friends for Rats: Rats like having a buddy, so it’s good to
+                have two. Just make sure they’re the same gender to avoid baby
+                rats, unless one is neutered.
+              </p>
+              <p>
+                2. Home Sweet Home: They’re night owls but still like seeing
+                what’s going on during the day. Their cage should be tall and
+                safe, away from cold drafts and loud noises.
+              </p>
+            </div>
+            <div class="page-footer">34</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-4"
+              style="
+                background-image: url(./assets/images/book-images/rats-area.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <!-- <h2 class="page-header">How to take care of a pet rat  </h2> -->
+            <div class="page-text">
+              <p>
+                3. Cozy Bed: Use safe materials for their bedding—paper is a
+                great choice. Steer clear of wood shavings or fluffy stuff that
+                might make them sneeze.
+              </p>
+              <p>
+                4. Tidy House: Keep their cage clean by checking for dirty
+                bedding often. Clean the whole cage with warm water when they’re
+                already awake and out for a play.
+              </p>
+              <p>
+                5. Safe Play Area: When rats come out to explore, make sure they
+                can’t nibble on wires or escape through tiny gaps. Move plants
+                they shouldn’t eat and cover any holes.
+              </p>
+            </div>
+            <div class="page-footer">36</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-2"
+              style="
+                background-image: url(./assets/images/book-images/rats-take-care.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <!-- <h2 class="page-header">How to take care of a pet rat  </h2> -->
+            <div class="page-text">
+              <p>
+                6. Fun and Games: Rats need playtime outside their cage every
+                day. They love tunnels, wooden toys, and climbing ropes.
+                Exercise wheels and hammocks are fun, too!
+              </p>
+              <p>
+                7. Keeping Healthy: Watch for any signs they’re not feeling
+                well, like sneezing a lot or looking a bit sad. If something
+                seems off, a vet visit is a good idea.
+              </p>
+              <p>
+                Taking care of pet rats means giving them lots of love, a nice
+                place to live, and making sure they have fun and stay healthy.
+              </p>
+            </div>
+            <div class="page-footer">38</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-3"
+              style="
+                background-image: url(./assets/images/book-images/fish-home.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <h2 class="page-header">How to treat a pet fish</h2>
+            <div class="page-text">
+              <p>
+                Having a pet fish is like having a little underwater friend!
+                Fish are quiet, but they still need care to keep them swimming
+                happily.
+              </p>
+              <p>Here's how to take care of your fish:</p>
+              <p>
+                1. Right Home: Fish need a tank that's big enough for them to
+                swim around comfortably. Make sure the tank is not too crowded
+                and has clean water.
+              </p>
+              <p>
+                2. Water World: Keeping the water clean is super important.
+                You’ll need a filter to help keep the water fresh and at the
+                right temperature for your fish. Some fish like it warmer, and
+                some like it cooler.
+              </p>
+            </div>
+            <div class="page-footer">40</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-4"
+              style="
+                background-image: url(./assets/images/book-images/fish-feeding.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <!-- <h2 class="page-header">How to treat a pet fish </h2> -->
+            <div class="page-text">
+              <p>
+                3. Breathing Easy: Fish breathe the oxygen in the water, so an
+                air pump can help make sure there’s enough for them.
+              </p>
+              <p>
+                4. Decorations : Fish enjoy having places to hide and explore.
+                You can add plants, rocks, and little caves to make their tank
+                feel like a mini ocean or river.
+              </p>
+              <p>
+                5. Feeding Time : Different fish eat different things. Some like
+                flakes, and some might need tiny pellets or even frozen food.
+                It’s important not to overfeed them because too much food can
+                make the water dirty.
+              </p>
+            </div>
+            <div class="page-footer">42</div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <div
+              class="page-image border-light-5"
+              style="
+                background-image: url(./assets/images/book-images/fish-cheking.webp);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content">
+            <!-- <h2 class="page-header">How to treat a pet fish </h2> -->
+            <div class="page-text">
+              <p>
+                6. Light Up: Just like us, fish have a day and night cycle.
+                Having lights on their tank helps them know when it’s day or
+                night, but don’t leave the lights on all the time, they need
+                rest too.
+              </p>
+              <p>
+                7. Checking In: Watch your fish to make sure they’re swimming
+                normally and look healthy. If they’re acting strangely or look
+                different, it might mean they need help.
+              </p>
+              <p>
+                Remember, every fish is special, and taking care of them means
+                learning about what they specifically need to be happy and
+                healthy in their watery world.
+              </p>
+            </div>
+            <div class="page-footer">44</div>
+          </div>
+        </div>
+
+      
+        <div class="page page-cover page-cover-bottom" data-density="hard">
+          <div class="page-content">
+            <h2>THE END</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button type="button" class="btn-prev">
+        <img src="./assets/icons/icon-prev.svg" alt="icon previous" />
+        <span>Previous page </span>
+      </button>
+       [<span class="page-current">1</span> of
+        <span class="page-total">-</span>] 
+      <button type="button" class="btn-next">
+        Next page <img src="./assets/icons/icon-next.svg" alt="icon next" />
+      </button>
+    </div>
+
+    <script src="./page-flip.browser.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
